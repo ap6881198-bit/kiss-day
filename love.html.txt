@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Love 💖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-love">
+
+<div class="container">
+    <h1>Hurray My Love ❤️</h1>
+
+    <div class="kiss">💋</div>
+
+    <p class="letter">
+        Hurray my love 💖 you remembered everything 😘💋<br><br>
+
+        Yes, our first kiss was on 30th Nov 💞 in Cafe Bari ☕💋<br><br>
+
+        I still remember how you challenged me for that kiss 😏💖  
+        and after that first kiss, how we were smiling like crazy 😍💕<br><br>
+
+        That normal date became the most special memory of my life 💫❤️<br><br>
+
+        I love you Pihu 🥺💗  
+        and I will always crave for your lips 💋🔥<br><br>
+
+        Happy Kiss Day my love 💞😘
+    </p>
+</div>
+
+<script>
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "💖";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (Math.random() * 20 + 15) + "px";
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 6000);
+}
+setInterval(createHeart, 300);
+</script>
+
+</body>
+</html>

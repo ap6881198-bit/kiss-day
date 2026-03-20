@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 2 💋</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-romantic">
+
+<div class="container">
+    <h1>Where was our first kiss? 😘</h1>
+
+    <button onclick="location.href='wrong.html'">Victoria Memorial</button><br><br>
+    <button onclick="location.href='wrong.html'">A2 Cafe</button><br><br>
+    <button onclick="location.href='wrong.html'">Park</button><br><br>
+    <button onclick="location.href='love.html'">Cafe Bari ❤️</button>
+</div>
+
+<script>
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "💖";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (Math.random() * 20 + 15) + "px";
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 6000);
+}
+setInterval(createHeart, 300);
+</script>
+
+</body>
+</html>
